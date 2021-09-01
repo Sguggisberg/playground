@@ -1,0 +1,26 @@
+<h1>Databinding</h1>
+<h4>String Interpolation</h4>
+<br />
+{{ aString }}
+<br />
+<h4>Property Binding</h4>
+<p [innerText]="aString"></p>
+<div>
+  <input type="text" value="{{ aString }}" />
+</div>
+<div>
+  <input type="text" [value]="aString" />
+</div>
+<div [ngClass]="{ 'red-border': true }">Text</div>
+
+<div [ngClass]="{ 'red-border': attachClass }"
+[ngStyle]="{'background-color' : 'blue'}">Text2</div>
+<br>
+<app-property-binding2 [name] = "'Max'"></app-property-binding2>
+<br>
+<h4>Event Binding</h4>
+<button (click)="attachClass = false">Klick mich</button>
+<h4>Event Binding</h4>
+<button (click)="myClick()">Klick mich</button>
+<h4>Event Binding</h4>
+<button (click)="myClick2($event)">Klick mich</button>

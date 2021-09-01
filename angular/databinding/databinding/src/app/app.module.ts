@@ -3,11 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { OtherComponent } from './other/other.component';
+import { AnotherComponent } from './other/another.component';
+import { BindingComponent } from './binding/binding.component';
+import { PropertyBinding2Component } from './binding/property-binding2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OtherComponent
+    OtherComponent,
+    AnotherComponent,
+    BindingComponent,
+    PropertyBinding2Component
   ],
   imports: [
     BrowserModule
