@@ -26,3 +26,7 @@
 <button (click)="myClick2($event)">Klick mich</button>
 <h4>Event Binding </h4>
 <app-event-binding (clicked)="aString = $event "></app-event-binding>
+<br>
+<h4>2-Way Binding </h4>
+<input type="text" [value] ="aString" (change) = "aString = eingabe.value" #eingabe>
+<input type="text" [(ngModel)]="aString">

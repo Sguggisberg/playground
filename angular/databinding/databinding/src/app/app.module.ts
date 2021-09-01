@@ -7,6 +7,7 @@ import { AnotherComponent } from './other/another.component';
 import { BindingComponent } from './binding/binding.component';
 import { PropertyBinding2Component } from './binding/property-binding2.component';
 import { EventBindingComponent } from './binding/event-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EventBindingComponent } from './binding/event-binding.component';
     EventBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
